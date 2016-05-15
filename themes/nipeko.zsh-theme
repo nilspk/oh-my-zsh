@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 #          FILE:  nipeko.zsh-theme
 #   DESCRIPTION:  oh-my-zsh theme file.
-#        AUTHOR:  Nils Peder Korsveien (nipeko.no@gmail.com)
+#        AUTHOR:  Peder Korsveien (peder.korsveien@gmail.com)
 #       VERSION:  0.1.0
 # ------------------------------------------------------------------------------
 
@@ -10,7 +10,7 @@ if [[ "$UID" -eq 0 ]]; then
     else NCOLOR="white"; 
 fi
 
-PROMPT='%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info) %(!.#.❯) '
+PROMPT='%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info) %(!.#.$) '
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[yellow]%}%B"
